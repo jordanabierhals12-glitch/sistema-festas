@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Agendamento - Espaço de Festas</title>
+    <link rel="stylesheet" href="css/agendamento.css">
+</head>
+<body>
+
+
+    <div class="form-container">
+        <h2>Solicite seu Agendamento</h2>
+        <p>Preencha os campos abaixo para reservar a sua data ideal.</p>
+
+        <form action="cardapio.html" method="get">
+            <!-- Nome do Cliente -->
+            <div class="input-group">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            </div>
+
+            <div class="input-group">
+                <label for="local">local do evento</label>
+                <input type="text" id="local" name="local" required>
+            </div>
+
+            <!-- Data do Evento -->
+            <div class="input-group">
+                <label for="data">Data do Evento</label>
+                <input type="text" id="data" name="data" required>
+            </div>
+
+            <!-- Horário do Evento -->
+            <div class="input-group">
+                <label for="hora">Horário de Início</label>
+                <input type="text" id="hora" name="hora" placeholder="00:00" maxlength="5" required>
+            </div>
+
+            <!-- Quantidade de Pessoas -->
+            <div class="input-group">
+                <label for="convidados">Quantidade de Convidados</label>
+                <input type="number" id="convidados" name="convidados" min="1" placeholder="Ex: 50" required>
+            </div>
+
+            <!-- Botões de Ação -->
+            <button type="submit" class="btn-submit">Confirmar Agendamento</button>
+            <a href="index.html" class="btn-back">Voltar para a Página Inicial</a>
+
+        
+        </form>
+    </div>
+    
+</body>
+</html>
