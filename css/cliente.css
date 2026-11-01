@@ -235,3 +235,30 @@
         max-width: 340px !important;
     }
 }
+/* Estilização do Botão do WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    bottom: 20px;
+    right: 60px;
+    background-color: #25d366;
+    border-radius: 50px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Efeito ao passar o mouse */
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+/* Tamanho do ícone interno */
+.whatsapp-icon {
+    width: 40px;
+    height: 40px;
+}
